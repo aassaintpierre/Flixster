@@ -12,8 +12,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="10dp"
         tools:srcCompat="@tools:sample/avatars" />
 
 
@@ -37,10 +37,10 @@
         android:layout_below="@+id/tvTitle"
         android:layout_marginStart="5dp"
         android:layout_marginTop="4dp"
-        android:textColor="@color/white"
-        tools:textColor="@color/white"
         android:layout_toEndOf="@+id/ivPoster"
+        android:textColor="@color/white"
         tools:ignore="UnknownId"
-        tools:text="A spinoff of the Fate of the Furious,Focusing on Johnson'a us Diplomatic security Agent Lube Hobbs forming an unlikely alliance with Statham'a Deckard Shaw" />
+        tools:text="A spinoff of the Fate of the Furious,Focusing on Johnson'a us Diplomatic security Agent Lube Hobbs forming an unlikely alliance with Statham'a Deckard Shaw"
+        tools:textColor="@color/white" />
 
 </RelativeLayout>
