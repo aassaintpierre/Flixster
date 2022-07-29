@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="movie" type="com.example.flixster.models.Movie"/>
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black">
 
 
     <ImageView
@@ -14,6 +21,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="0dp"
         android:layout_marginTop="0dp"
+        android:scaleType="centerCrop"
+        app:imageUrl="@{movie.backdropPath}"
         tools:srcCompat="@tools:sample/avatars" />
 
 
@@ -24,10 +33,11 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="127dp"
-        android:textSize="24sp"
         android:textColor="@color/teal_700"
-        tools:textColor="@color/teal_700"
-        tools:text="Fast Furious Present: Hobbs Shaw" />
+        android:textSize="24sp"
+        android:text="@{movie.tittle}"
+        tools:text="Fast Furious Present: Hobbs Shaw"
+        tools:textColor="@color/teal_700" />
 
 
     <TextView
@@ -39,8 +49,12 @@
         android:layout_marginTop="27dp"
         android:layout_toEndOf="@+id/ivPoster"
         android:textColor="@color/white"
-        tools:textColor="@color/white"
         tools:ignore="UnknownId"
-        tools:text="A spinoff of the Fate of the Furious,Focusing on Johnson'a us Diplomatic security Agent Lube Hobbs forming an unlikely alliance with Statham'a Deckard Shaw" />
+        android:text="@{movie.overview}"
+        tools:text="A spinoff of the Fate of the Furious,Focusing on Johnson'a us Diplomatic security Agent Lube Hobbs forming an unlikely alliance with Statham'a Deckard Shaw"
+        tools:textColor="@color/white" />
+    </RelativeLayout>
 
-</RelativeLayout>
+</layout>
+
+

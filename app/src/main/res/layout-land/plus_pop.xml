@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingDefaultResource">
+    <data>
+        <variable name="movie" type="com.example.flixster.models.Movie"/>
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/container2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/backdrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            app:imageUrl1="@{movie.backdropPath}"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/click"
+            android:layout_width="257dp"
+            android:layout_height="158dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="226dp"
+            android:layout_marginTop="114dp"
+            app:srcCompat="@drawable/play_icon"
+            android:transitionName="transitionTitlle"
+            />
+    </RelativeLayout>
+</layout>
+
+
+
+
+
+

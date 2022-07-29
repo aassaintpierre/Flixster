@@ -3,10 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Annie/Documents/Flixster/app/src/main/res/drawable/ic_launcher_background.xml" value="0.184" />
         <entry key="..\:/Users/Annie/Documents/Flixster/app/src/main/res/layout-land/item_movie.xml" value="0.15211640211640212" />
         <entry key="..\:/Users/Annie/Documents/Flixster/app/src/main/res/layout-land/item_movies.xml" value="0.1" />
         <entry key="..\:/Users/Annie/Documents/Flixster/app/src/main/res/layout-land/layout_land.xml" value="0.15211640211640212" />
+        <entry key="..\:/Users/Annie/Documents/Flixster/app/src/main/res/layout-land/plus_pop.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/Annie/Documents/Flixster/app/src/main/res/layout-port/plus_pop.xml" value="0.17864583333333334" />
+        <entry key="..\:/Users/Annie/Documents/Flixster/app/src/main/res/layout/activity_detail.xml" value="0.1796875" />
+        <entry key="..\:/Users/Annie/Documents/Flixster/app/src/main/res/layout/activity_detail2.xml" value="0.22" />
         <entry key="..\:/Users/Annie/Documents/Flixster/app/src/main/res/layout/activity_main.xml" value="0.24066390041493776" />
+        <entry key="..\:/Users/Annie/Documents/Flixster/app/src/main/res/layout/activity_main2.xml" value="0.1" />
         <entry key="..\:/Users/Annie/Documents/Flixster/app/src/main/res/layout/item_movie.xml" value="0.129981884057971" />
         <entry key="..\:/Users/Annie/Documents/Flixster/app/src/main/res/layout/item_movies.xml" value="0.22" />
       </map>
@@ -17,5 +23,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.22" />
+      </ProjectState>
+    </option>
   </component>
 </project>
