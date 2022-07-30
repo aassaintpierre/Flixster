@@ -136,12 +136,14 @@ public class MovieAdapter extends  RecyclerView.Adapter<RecyclerView.ViewHolder>
                     Intent a = new Intent(context, DetailActivity.class);
                     // put "extras" into the bundle for access in the second activity
                     a.putExtra("movie", Parcels.wrap(movie));
-                    context.startActivity(a);
+//                    context.startActivity(a);
+
 //                    Pair<View, String> transitionTitlle = Pair.create((View)movies, "transitionTitlle");
                     ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation((Activity) context, popBinding.backdrop,"transitionTitlle");
 
 
                     // brings up the second activity
+
                     context.startActivity(a, options.toBundle());
 
                 }
@@ -153,7 +155,7 @@ public class MovieAdapter extends  RecyclerView.Adapter<RecyclerView.ViewHolder>
     public static class BindingAdapterUtils {
         @BindingAdapter({"imageUrl1"})
         public static void loadImage1(ImageView img, String ImageUrl) {
-            int radius = 50;
+            int radius = 40;
 
             Glide.with(context)
                     .load(ImageUrl)
@@ -166,7 +168,7 @@ public class MovieAdapter extends  RecyclerView.Adapter<RecyclerView.ViewHolder>
 
         @BindingAdapter({"imageUrl"})
         public static void loadImage(ImageView img, String ImageUrl) {
-            int radius = 50;
+            int radius = 40;
 
             Glide.with(context)
                     .load(ImageUrl)

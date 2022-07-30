@@ -12,10 +12,12 @@
         android:layout_height="match_parent"
         tools:context=".DetailActivity"
         android:orientation="vertical"
+        android:background="@color/black"
         >
 
         <com.google.android.youtube.player.YouTubePlayerView
             android:id="@+id/player"
+            android:transitionName="transitionTitlle"
             android:layout_width="match_parent"
             android:layout_height="250dp"/>
 
@@ -25,6 +27,7 @@
             android:layout_height="wrap_content"
             android:text="@{movie.tittle}"
             android:textSize="30sp"
+            android:textColor="@color/teal_700"
             tools:text="It Chapter Two" />
 
         <RatingBar
@@ -32,6 +35,8 @@
             style="@style/Widget.AppCompat.RatingBar.Indicator"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:progressTint="@color/teal_700"
+            android:progressBackgroundTint="@color/white"
             android:isIndicator="true"
             android:numStars="10"
             android:rating="@{(float)movie.rating}" />
@@ -40,6 +45,7 @@
             android:id="@+id/tvOverview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:text="@{movie.overview}"
             tools:text="27 years after overcoming the malevolent supernatural entity Pennywise , the former menbers of the losers' club,who have grown up and moved away from Derry, are brought back together by devastating phone call." />
 
